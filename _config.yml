@@ -1,8 +1,8 @@
 # Mandatory settings
 
-name: Chalk
+name: Haijianliu
 paginate: 25
-url: https://example.com # add your site url (format: https://example.com)
+url: # add your site url (format: https://example.com)
 
 blog_theme: dark # light or dark
 
