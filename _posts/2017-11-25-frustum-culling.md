@@ -2,7 +2,7 @@
 layout: post
 title: "Frustum culling"
 description: "View frustum culling feature show case."
-tags: [opengl, cpp, macos]
+tags: [opengl, cpp, mac]
 ---
 
 The goal of view frustum culling is to be able to identify what is inside the frustum (totally or partially), and cull everything that is not inside. Only the stuff that is inside the frustum, even if only partially, is sent to the graphics hardware. This Process is not only working with meshes, but also wording with particles and lights.

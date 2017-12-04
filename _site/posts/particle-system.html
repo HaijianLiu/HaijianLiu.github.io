@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>VANIA | Particle system</title>
+  <title>Haijianliu | Particle system</title>
   <meta name="description" content="A simple particle system I created and a fire effect test scene.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://localhost:4000/posts/particle-system">
   <meta property="og:description" content="A simple particle system I created and a fire effect test scene.">
-  <meta property="og:site_name" content="VANIA">
+  <meta property="og:site_name" content="Haijianliu">
   <meta property="og:image" content="http://localhost:4000/assets/og-image.jpg">
 
   <meta name="twitter:card" content="summary">
@@ -22,7 +22,7 @@
   <meta name="twitter:image" content="http://localhost:4000/assets/og-image.jpg">
 
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link href="http://localhost:4000/feed.xml" type="application/rss+xml" rel="alternate" title="VANIA Last 10 blog posts">
+  <link href="http://localhost:4000/feed.xml" type="application/rss+xml" rel="alternate" title="Haijianliu Last 10 blog posts">
 
   
 
@@ -37,7 +37,7 @@
     <div class="grid grid-centered">
       <div class="grid-cell">
         <nav class="header-nav scrollappear">
-  <a href="/" class="header-logo" title="VANIA">VANIA</a>
+  <a href="/" class="header-logo" title="Haijianliu">Haijianliu</a>
   <ul class="header-links">
     
       <li>
@@ -118,7 +118,7 @@
                 
                   <a href="/tag/cpp">cpp</a>
                 
-                  <a href="/tag/macos">macos</a>
+                  <a href="/tag/mac">mac</a>
                 
               </div>
             </div>
@@ -144,7 +144,7 @@
   <li>
 <code class="highlighter-rouge">drop</code>: 8 particles.</li>
   <li>
-<code class="highlighter-rouge">fire</code>: 26 particles with un animation.</li>
+<code class="highlighter-rouge">fire</code>: 26 particles with uv animation.</li>
   <li>
 <code class="highlighter-rouge">light</code>: a real light, color of (1, 0.4, 0.1).</li>
 </ul>
@@ -158,23 +158,23 @@
 <p>Emitter is for randomly generating Particle components. And here are some features currently supporting:</p>
 <ul>
   <li>
-<code class="highlighter-rouge">uv animation</code>: when set to true, play a uv animation.</li>
+<code class="highlighter-rouge">uv animation</code> when set to true, play a uv animation.</li>
   <li>
-<code class="highlighter-rouge">divide</code>: texture divide x and y for uv animation.</li>
+<code class="highlighter-rouge">divide</code> texture divide x and y for uv animation.</li>
   <li>
-<code class="highlighter-rouge">sample time</code>: time between each frame for uv animation.</li>
+<code class="highlighter-rouge">sample time</code> time between each frame for uv animation.</li>
   <li>
-<code class="highlighter-rouge">max particles</code>: max number of particles for Emitter to generate.</li>
+<code class="highlighter-rouge">max particles</code> max number of particles for Emitter to generate.</li>
   <li>
-<code class="highlighter-rouge">spawn time</code>: particle spawn time.</li>
+<code class="highlighter-rouge">spawn time</code> particle spawn time.</li>
   <li>
-<code class="highlighter-rouge">life time</code>: defined by max and min.</li>
+<code class="highlighter-rouge">life time</code> defined by max and min.</li>
   <li>
-<code class="highlighter-rouge">init scale</code>: init scale. (And not support randomly generating for now)</li>
+<code class="highlighter-rouge">init scale</code> init scale. (And not support randomly generating for now)</li>
   <li>
-<code class="highlighter-rouge">init velocity</code>: defined by horizontal and vertical random range.</li>
+<code class="highlighter-rouge">init velocity</code> defined by horizontal and vertical random range.</li>
   <li>
-<code class="highlighter-rouge">gravity</code>: gravity behavior.</li>
+<code class="highlighter-rouge">gravity</code> gravity behavior.</li>
 </ul>
 
 <h4 id="particle">Particle</h4>
@@ -199,9 +199,7 @@
 <span class="n">glClear</span><span class="p">(</span><span class="n">GL_COLOR_BUFFER_BIT</span><span class="p">);</span>
 <span class="n">glBlendFunc</span><span class="p">(</span><span class="n">GL_ONE</span><span class="p">,</span> <span class="n">GL_ONE</span><span class="p">);</span>
 <span class="n">glDepthMask</span><span class="p">(</span><span class="n">GL_FALSE</span><span class="p">);</span>
-<span class="n">fxLayer</span><span class="o">-&gt;</span><span class="n">render</span><span class="p">(</span><span class="n">camera</span><span class="p">);</span>
-<span class="n">glDepthMask</span><span class="p">(</span><span class="n">GL_TRUE</span><span class="p">);</span>
-<span class="n">glBlendFunc</span><span class="p">(</span><span class="n">GL_SRC_ALPHA</span><span class="p">,</span> <span class="n">GL_ONE_MINUS_SRC_ALPHA</span><span class="p">);</span></code></pre></figure>
+<span class="n">fxLayer</span><span class="o">-&gt;</span><span class="n">render</span><span class="p">(</span><span class="n">camera</span><span class="p">);</span></code></pre></figure>
 
 <h4 id="instance-draw">Instance draw</h4>
 <p>Since there will 94 draw calls for each fire effect, so just use OpenGL instance draw function. And there will be 4 draw calls for each fire after all.</p>

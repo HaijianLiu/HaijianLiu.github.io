@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Dungeon tease"
-description: "A dungeon tease and vania engine show case."
-tags: [opengl, cpp, macos]
+description: "A dungeon tease and rendering show case."
+tags: [opengl, cpp, mac]
 ---
 
-I have been working on a 3d rendering engine for about 4 months by now. Although there are really a lot of things needed to deal with and it is really just a beginning, finally here comes the first tease!
+I have been working on a personal 3d rendering engine for about 4 months by now. Although there are really a lot of stuff needed to deal with and it is really just a beginning, finally here comes the first tease!
 {% include image.html path="2017-11-26-dungeon-demo/dungeon_screen@2x.png" path-detail="2017-11-26-dungeon-demo/dungeon_screen_full@2x.png" alt="dungeon tease" %}
 
 
@@ -18,10 +18,11 @@ Features currently supported:
 - `render pass` separated render pass, such as G-buffer, effect, lighting, shadow, making the whole process more controllable and also contributing to rendering performance.
 - `frustum culling` cull everything that is not inside the camera.
 - `shadow mapping` real time shader based shadow mapping.
+- `SSAO` real time screen-space SSAO.
 - `particles system` better looking and performance, easy to implement.
 - `instance object` implement of OpenGL instance draw feature.
 - `ECS` Entity Component & GameObject System just like Unity Engine.
-- `motion blending` bone animation blending, supporting all the animations from mixamo.com :smiling_imp:.
+- `motion blending` bone animation blending, supporting all the animations from mixamo.com.
 - `third person controller` player-camera controller just like all the third person game, supporting PS4 controller.
 - `import blender file` blender is an awesome software. All the stages were edited in blender.
 
@@ -35,10 +36,10 @@ Here follows a short video, and enjoy it :point_down:
 ## Frameworks
 
 #### opengl es 3.2 & glm
-Of course the core graphic api and core math library.
+Core graphic api and core math library.
 
 #### assimp
-[Open Asset Import Library (short name: Assimp)](http://assimp.sourceforge.net) is a portable Open Source library to import various well-known 3D model formats in a uniform manner. Although I have wrote some model loader program by myself, Assimp is more professional library and can handle more complex situations.
+Although I have wrote some model loader program by myself, Assimp is more professional library and can handle more complex situations. [Open Asset Import Library (short name: Assimp)](http://assimp.sourceforge.net) is a portable Open Source library to import various well-known 3D model formats in a uniform manner.
 
 #### stb
 Public domain C image loading library by [nothings](http://nothings.org).

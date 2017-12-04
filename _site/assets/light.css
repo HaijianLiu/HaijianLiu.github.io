@@ -1246,5 +1246,5 @@ img {
 .appeared {
   visibility: visible;
   opacity: 1;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out; }
+  -webkit-transition: opacity 1.0s ease-in-out;
+  transition: opacity 1.0s ease-in-out; }

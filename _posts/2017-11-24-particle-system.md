@@ -2,7 +2,7 @@
 layout: post
 title: "Particle system"
 description: "A simple particle system I created and a fire effect test scene."
-tags: [opengl, cpp, macos]
+tags: [opengl, cpp, mac]
 ---
 
 It is really a simple one but with a very satisfied effect. :sparkles:
@@ -18,7 +18,7 @@ For a good result, I create this fire effect with 4 Emitters and 1 light:
 - `smoke`: 20 particles.
 - `spark`: 40 particles.
 - `drop`: 8 particles.
-- `fire`: 26 particles with un animation.
+- `fire`: 26 particles with uv animation.
 - `light`: a real light, color of (1, 0.4, 0.1).
 
 So there will be a totally 94 particles for each fire effect.
@@ -28,15 +28,15 @@ Like all the other game engines, the whole particle system is simply combined wi
 
 #### Emitter
 Emitter is for randomly generating Particle components. And here are some features currently supporting:
-- `uv animation`: when set to true, play a uv animation.
-- `divide`: texture divide x and y for uv animation.
-- `sample time`: time between each frame for uv animation.
-- `max particles`: max number of particles for Emitter to generate.
-- `spawn time`: particle spawn time.
-- `life time`: defined by max and min.
-- `init scale`: init scale. (And not support randomly generating for now)
-- `init velocity`: defined by horizontal and vertical random range.
-- `gravity`: gravity behavior.
+- `uv animation` when set to true, play a uv animation.
+- `divide` texture divide x and y for uv animation.
+- `sample time` time between each frame for uv animation.
+- `max particles` max number of particles for Emitter to generate.
+- `spawn time` particle spawn time.
+- `life time` defined by max and min.
+- `init scale` init scale. (And not support randomly generating for now)
+- `init velocity` defined by horizontal and vertical random range.
+- `gravity` gravity behavior.
 
 #### Particle
 Particle component is really simple. It will just do a update.
@@ -61,8 +61,6 @@ glClear(GL_COLOR_BUFFER_BIT);
 glBlendFunc(GL_ONE, GL_ONE);
 glDepthMask(GL_FALSE);
 fxLayer->render(camera);
-glDepthMask(GL_TRUE);
-glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 {% endhighlight %}
 
 #### Instance draw
