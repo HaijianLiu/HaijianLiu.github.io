@@ -130,10 +130,11 @@
   <img src="/assets/2017-11-25-frustum-culling/frustum_culling_screen@2x.png" alt="frustum culling" />
 </a></p>
 
-<h2 id="bounding-box">Bounding box</h2>
+<h2 id="bounding-box">Bounding Box</h2>
 
-<p>A bounding box will be generated during the loading process for each GameObject.
-<a href="/assets/2017-11-25-frustum-culling/bounding_box_screen_full@2x.png" data-rjs="/assets/2017-11-25-frustum-culling/bounding_box_screen_full@2x.png" class="fluidbox-trigger">
+<p>A bounding box will be generated during the loading process for each GameObject.</p>
+
+<p><a href="/assets/2017-11-25-frustum-culling/bounding_box_screen_full@2x.png" data-rjs="/assets/2017-11-25-frustum-culling/bounding_box_screen_full@2x.png" class="fluidbox-trigger">
   <img src="/assets/2017-11-25-frustum-culling/bounding_box_screen@2x.png" alt="bounding box" />
 </a></p>
 
@@ -142,14 +143,16 @@
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="kt">float</span> <span class="n">lightMax</span> <span class="o">=</span> <span class="n">glm</span><span class="o">::</span><span class="n">max</span><span class="p">(</span><span class="n">glm</span><span class="o">::</span><span class="n">max</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">color</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">color</span><span class="p">.</span><span class="n">y</span><span class="p">),</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">color</span><span class="p">.</span><span class="n">z</span><span class="p">)</span> <span class="o">*</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">intensity</span><span class="p">;</span>
 <span class="k">this</span><span class="o">-&gt;</span><span class="n">radius</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">*</span> <span class="n">glm</span><span class="o">::</span><span class="n">sqrt</span><span class="p">(</span><span class="n">lightMax</span> <span class="o">/</span> <span class="mi">5</span><span class="p">);</span></code></pre></figure>
 
-<h2 id="test-demo">Test demo</h2>
+<h2 id="demo">Demo</h2>
 
 <p>The frustum process will never be seen by player, however I created a test camera which can switch between default perspective and test perspective.</p>
+
 <div class="embed-responsive embed-responsive-16by9">
 <iframe src="https://www.youtube.com/embed/fZONvOo_tD4?loop=1&amp;playlist=fZONvOo_tD4&amp;modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;controls=0" allowfullscreen=""></iframe>
 </div>
 
 <h2 id="implementation">Implementation</h2>
+
 <p>Frustum culling process is only happening with the main camera. So I make it a component, which only need to be attached to camera object.</p>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">GameObject</span><span class="o">*</span> <span class="n">camera</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GameObject</span><span class="p">();</span>
@@ -159,6 +162,12 @@
 <span class="n">scene</span><span class="o">-&gt;</span><span class="n">mainCamera</span> <span class="o">=</span> <span class="n">camera</span><span class="p">;</span>
 <span class="n">scene</span><span class="o">-&gt;</span><span class="n">addGameObject</span><span class="p">(</span><span class="s">"mainCamera"</span><span class="p">,</span> <span class="n">camera</span><span class="p">);</span></code></pre></figure>
 
+<h2 id="assets">Assets</h2>
+
+<ul>
+  <li>Character and animation from <a href="https://www.mixamo.com">mixamo</a></li>
+  <li>Model by SilverTm from <a href="https://www.unrealengine.com/marketplace">UE4 Marketplace</a></li>
+</ul>
 
           </div>
 

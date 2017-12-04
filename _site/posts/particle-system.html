@@ -152,10 +152,13 @@
 <p>So there will be a totally 94 particles for each fire effect.</p>
 
 <h2 id="component">Component</h2>
+
 <p>Like all the other game engines, the whole particle system is simply combined with two parts: Emiter and Particle.</p>
 
 <h4 id="emitter">Emitter</h4>
+
 <p>Emitter is for randomly generating Particle components. And here are some features currently supporting:</p>
+
 <ul>
   <li>
 <code class="highlighter-rouge">uv animation</code> when set to true, play a uv animation.</li>
@@ -178,11 +181,13 @@
 </ul>
 
 <h4 id="particle">Particle</h4>
+
 <p>Particle component is really simple. It will just do a update.</p>
 
 <h2 id="techniques">Techniques</h2>
 
 <h4 id="effect-render-pass">Effect render pass</h4>
+
 <p>For a classic way to render a particle system, there usually is a sort progress for alpha test, during which all the particles will be sorted by their z position.</p>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">render</span> <span class="n">scene</span> <span class="o">-&gt;</span> <span class="n">sort</span> <span class="n">particles</span> <span class="o">-&gt;</span> <span class="n">render</span> <span class="n">particles</span></code></pre></figure>
@@ -202,6 +207,7 @@
 <span class="n">fxLayer</span><span class="o">-&gt;</span><span class="n">render</span><span class="p">(</span><span class="n">camera</span><span class="p">);</span></code></pre></figure>
 
 <h4 id="instance-draw">Instance draw</h4>
+
 <p>Since there will 94 draw calls for each fire effect, so just use OpenGL instance draw function. And there will be 4 draw calls for each fire after all.</p>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span> <span class="kt">void</span> <span class="n">drawInstance</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;*</span> <span class="n">instances</span><span class="p">)</span> <span class="p">{</span>
@@ -211,6 +217,7 @@
 <span class="p">}</span></code></pre></figure>
 
 <h2 id="implementation">Implementation</h2>
+
 <p>Scene the whole system is based on a ECS (Entity Component System), to implement this particle system will be something like this:</p>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="p">...</span>
@@ -226,6 +233,12 @@
 </span><span class="n">scene</span><span class="o">-&gt;</span><span class="n">addGameObject</span><span class="p">(</span><span class="s">"object_name"</span><span class="p">),</span> <span class="n">fire</span><span class="p">);</span>
 <span class="p">...</span></code></pre></figure>
 
+<h2 id="assets">Assets</h2>
+
+<ul>
+  <li>Character and animation from <a href="https://www.mixamo.com">mixamo</a>
+</li>
+</ul>
 
           </div>
 
