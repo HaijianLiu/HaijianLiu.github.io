@@ -24,10 +24,13 @@ For a good result, I create this fire effect with 4 Emitters and 1 light:
 So there will be a totally 94 particles for each fire effect.
 
 ## Component
+
 Like all the other game engines, the whole particle system is simply combined with two parts: Emiter and Particle.
 
 #### Emitter
+
 Emitter is for randomly generating Particle components. And here are some features currently supporting:
+
 - `uv animation` when set to true, play a uv animation.
 - `divide` texture divide x and y for uv animation.
 - `sample time` time between each frame for uv animation.
@@ -39,21 +42,28 @@ Emitter is for randomly generating Particle components. And here are some featur
 - `gravity` gravity behavior.
 
 #### Particle
+
 Particle component is really simple. It will just do a update.
 
 ## Techniques
 
 #### Effect render pass
+
 For a classic way to render a particle system, there usually is a sort progress for alpha test, during which all the particles will be sorted by their z position.
+
 {% highlight cpp %}
 render scene -> sort particles -> render particles
 {% endhighlight %}
+
 But by using OpenGL depth map settings, there is a more efficient way to do a particle rendering. And this is also much more controllable.
+
 {% highlight cpp %}
 render scene -> copy depth -> set depth to read only ->
 set blend mode to add or alpha -> render particles
 {% endhighlight %}
+
 And here is the code:
+
 {% highlight cpp %}
 glBindFramebuffer(GL_DRAW_FRAMEBUFFER, this->fxPass.fbo);
 glBlitFramebuffer(0, 0, width, height, 0, 0, width, height, GL_DEPTH_BUFFER_BIT, GL_NEAREST);
@@ -64,7 +74,9 @@ fxLayer->render(camera);
 {% endhighlight %}
 
 #### Instance draw
+
 Since there will 94 draw calls for each fire effect, so just use OpenGL instance draw function. And there will be 4 draw calls for each fire after all.
+
 {% highlight cpp %}
 template <typename T> void drawInstance(std::vector<T>* instances) {
   glBindBuffer(GL_ARRAY_BUFFER, this->vboInstance);
@@ -74,6 +86,7 @@ template <typename T> void drawInstance(std::vector<T>* instances) {
 {% endhighlight %}
 
 ## Implementation
+
 Scene the whole system is based on a ECS (Entity Component System), to implement this particle system will be something like this:
 
 {% highlight cpp %}
@@ -90,3 +103,7 @@ fireEmitter->createParticles("particle_name", scene);
 scene->addGameObject("object_name"), fire);
 ...
 {% endhighlight %}
+
+## Assets
+
+- Character and animation from [mixamo](https://www.mixamo.com)

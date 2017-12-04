@@ -26,15 +26,19 @@ Features currently supported:
 ## Frameworks
 
 #### opengl es 3.2 & glm
+
 Core graphic api and core math library.
 
 #### assimp
+
 Although I have wrote some model loader program by myself, Assimp is more professional library and can handle more complex situations. [Open Asset Import Library (short name: Assimp)](http://assimp.sourceforge.net) is a portable Open Source library to import various well-known 3D model formats in a uniform manner.
 
 #### stb
+
 Public domain C image loading library by [nothings](http://nothings.org).
 
 ## Assets
+
 - Character and animation from [mixamo](https://www.mixamo.com)
 
 ## Bibliography

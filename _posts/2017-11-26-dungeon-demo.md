@@ -9,7 +9,6 @@ I have been working on a personal 3d rendering engine for about 4 months by now.
 
 {% include image.html path="2017-11-26-dungeon-demo/dungeon_screen@2x.png" path-detail="2017-11-26-dungeon-demo/dungeon_screen_full@2x.png" alt="dungeon tease" %}
 
-
 ## Features
 
 Features currently supported:
@@ -29,23 +28,27 @@ Features currently supported:
 
 And some new features are one the way, such like `baked shadow and lighting` `LUT filter` `bloom and blur`.
 Here follows a short video, and enjoy it :point_down:
+
 <div class="embed-responsive embed-responsive-16by9">
 <iframe src="https://www.youtube.com/embed/Hp1O_UeuIm8?loop=1&playlist=Hp1O_UeuIm8&modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen></iframe>
 </div>
 
-
 ## Frameworks
 
 #### opengl es 3.2 & glm
+
 Core graphic api and core math library.
 
 #### assimp
+
 Although I have wrote some model loader program by myself, Assimp is more professional library and can handle more complex situations. [Open Asset Import Library (short name: Assimp)](http://assimp.sourceforge.net) is a portable Open Source library to import various well-known 3D model formats in a uniform manner.
 
 #### stb
+
 Public domain C image loading library by [nothings](http://nothings.org).
 
 ## Assets
+
 - Character and animation from [mixamo](https://www.mixamo.com)
 - Model by SilverTm from [UE4 Marketplace](https://www.unrealengine.com/marketplace)
 
