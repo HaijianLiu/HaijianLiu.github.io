@@ -1,9 +1,8 @@
 # Mandatory settings
 
-name: Haijianliu
+name: VANIA
 paginate: 25
 url: # add your site url (format: https://example.com)
-
 blog_theme: dark # light or dark
 
 # Optional settings

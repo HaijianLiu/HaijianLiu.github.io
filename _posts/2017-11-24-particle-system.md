@@ -5,7 +5,7 @@ description: "A simple particle system I created and a fire effect test scene."
 tags: [opengl, cpp, macos]
 ---
 
-It is really a simple one but with a very `satisfied` effect. See the video below and enjoy it.:sparkles:
+It is really a simple one but with a very satisfied effect. :sparkles:
 
 <div class="embed-responsive embed-responsive-16by9">
 <iframe src="https://www.youtube.com/embed/mp6ohizWPgw?loop=1&playlist=mp6ohizWPgw&modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen></iframe>
@@ -24,7 +24,7 @@ For a good result, I create this fire effect with 4 Emitters and 1 light:
 So there will be a totally 94 particles for each fire effect.
 
 ## Component
-Like all the other game engines, the whole particle system is simply combined with two parts: `Emiter` and `Particle`.
+Like all the other game engines, the whole particle system is simply combined with two parts: Emiter and Particle.
 
 #### Emitter
 Emitter is for randomly generating Particle components. And here are some features currently supporting:
@@ -41,7 +41,7 @@ Emitter is for randomly generating Particle components. And here are some featur
 #### Particle
 Particle component is really simple. It will just do a update.
 
-## Technicals
+## Techniques
 
 #### Effect render pass
 For a classic way to render a particle system, there usually is a sort progress for alpha test, during which all the particles will be sorted by their z position.
