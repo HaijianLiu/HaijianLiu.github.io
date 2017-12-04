@@ -13,18 +13,19 @@ I have been working on a 3d rendering engine for about 4 months by now. Although
 
 Features currently supported:
 
-- `PBR`: real time physics base rendering algorithm.
-- `render queue`: a node based render queue, that contributes to performance by reducing api calls.
-- `render pass`: separated render pass, such as G-buffer, effect, lighting, shadow, making the whole process more controllable and also contributing to rendering performance.
-- `shadow mapping`: real time shader based shadow mapping.
-- `particles system`: better looking and performance, easy to implement.
-- `instance object`: implement of OpenGL instance draw feature.
-- `ECS`: An Entity Component & GameObject System just like Unity Engine, very easy to play with.
-- `motion blending`: bone animation blending, supporting all the animations from mixamo.com :smiling_imp:.
-- `third person controller`: player-camera controller just like all the third person game, supporting PS4 controller.
-- `import blender file`: blender is an awesome software. All the stages were edited in blender.
+- `PBR` real time physics base rendering algorithm and HDR.
+- `render queue` a node based render queue, that contributes to performance by reducing api calls.
+- `render pass` separated render pass, such as G-buffer, effect, lighting, shadow, making the whole process more controllable and also contributing to rendering performance.
+- `frustum culling` cull everything that is not inside the camera.
+- `shadow mapping` real time shader based shadow mapping.
+- `particles system` better looking and performance, easy to implement.
+- `instance object` implement of OpenGL instance draw feature.
+- `ECS` Entity Component & GameObject System just like Unity Engine.
+- `motion blending` bone animation blending, supporting all the animations from mixamo.com :smiling_imp:.
+- `third person controller` player-camera controller just like all the third person game, supporting PS4 controller.
+- `import blender file` blender is an awesome software. All the stages were edited in blender.
 
-And some new features are one the way, such like `baked shadow and lighting` `LUT post effect` `bloom and blur`.
+And some new features are one the way, such like `baked shadow and lighting` `LUT filter` `bloom and blur`.
 Here follows a short video, and enjoy it :point_down:
 <div class="embed-responsive embed-responsive-16by9">
 <iframe src="https://www.youtube.com/embed/Hp1O_UeuIm8?loop=1&playlist=Hp1O_UeuIm8&modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen></iframe>
@@ -33,7 +34,7 @@ Here follows a short video, and enjoy it :point_down:
 
 ## Frameworks
 
-#### opengk es 3.2 & glm
+#### opengl es 3.2 & glm
 Of course the core graphic api and core math library.
 
 #### assimp
@@ -41,6 +42,10 @@ Of course the core graphic api and core math library.
 
 #### stb
 Public domain C image loading library by [nothings](http://nothings.org).
+
+## Assets
+- Character and animation from [mixamo](https://www.mixamo.com)
+- Model by SilverTm from [UE4 Marketplace](https://www.unrealengine.com/marketplace)
 
 ## Bibliography
 - [Background: Physics and Math of Shading by Naty Hoffmann](http://blog.selfshadow.com/publications/s2013-shading-course/hoffman/s2013_pbs_physics_math_notes.pdf)

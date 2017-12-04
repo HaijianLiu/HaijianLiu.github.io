@@ -75,7 +75,7 @@ template <typename T> void drawInstance(std::vector<T>* instances) {
 }
 {% endhighlight %}
 
-## Implement
+## Implementation
 Scene the whole system is based on a ECS (Entity Component System), to implement this particle system will be something like this:
 
 {% highlight cpp %}
