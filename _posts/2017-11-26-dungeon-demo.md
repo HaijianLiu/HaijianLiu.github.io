@@ -6,7 +6,7 @@ tags: [opengl, cpp, macos]
 ---
 
 I have been working on a 3d rendering engine for about 4 months by now. Although there are really a lot of things needed to deal with and it is really just a beginning, finally here comes the first tease!
-{% include image.html path="2017-11-26-dungeon-demo/dungeon_screen@2x.png" path-detail="2017-11-26-dungeon-demo/dungeon_screen@2x.png" alt="vania tease" %}
+{% include image.html path="2017-11-26-dungeon-demo/dungeon_screen@2x.png" path-detail="2017-11-26-dungeon-demo/dungeon_screen_full@2x.png" alt="dungeon tease" %}
 
 
 ## Features
