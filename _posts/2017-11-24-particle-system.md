@@ -106,4 +106,4 @@ scene->addGameObject("object_name"), fire);
 
 ## Assets
 
-- Character and animation from [mixamo](https://www.mixamo.com)
+- Character and animation from [mixamo](https://www.mixamo.com){:target="blank"}.

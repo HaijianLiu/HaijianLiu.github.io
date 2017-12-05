@@ -1036,12 +1036,12 @@ img {
     margin: 0; }
 
 .highlighter-rouge {
-  padding: 2px 4px;
-  font-size: 14px;
-  color: #ebeaea;
+  padding: 2px 8px;
+  font-size: 15px;
+  color: #fff;
   background: #050505;
   border: 1px solid #393636;
-  border-radius: 1px; }
+  border-radius: 4px; }
 
 @media all and (max-width: 767px) {
   .highlight {

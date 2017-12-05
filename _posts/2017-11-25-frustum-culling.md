@@ -45,5 +45,5 @@ scene->addGameObject("mainCamera", camera);
 
 ## Assets
 
-- Character and animation from [mixamo](https://www.mixamo.com)
-- Model by SilverTm from [UE4 Marketplace](https://www.unrealengine.com/marketplace)
+- Character and animation from [mixamo](https://www.mixamo.com){:target="blank"}.
+- Model by SilverTm from [UE4 Marketplace](https://www.unrealengine.com/marketplace){:target="blank"}.

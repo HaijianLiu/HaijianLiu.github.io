@@ -25,24 +25,18 @@ Features currently supported:
 
 ## Frameworks
 
-#### opengl es 3.2 & glm
+- `OpenGL ES 3.2 & GLM` Core graphic api and core math library.
 
-Core graphic api and core math library.
+- `Assimp` Although I have wrote some model loader program by myself, Assimp is more professional library and can handle more complex situations. [Open Asset Import Library (short name: Assimp)](http://assimp.sourceforge.net){:target="blank"} is a portable Open Source library to import various well-known 3D model formats in a uniform manner.
 
-#### assimp
-
-Although I have wrote some model loader program by myself, Assimp is more professional library and can handle more complex situations. [Open Asset Import Library (short name: Assimp)](http://assimp.sourceforge.net) is a portable Open Source library to import various well-known 3D model formats in a uniform manner.
-
-#### stb
-
-Public domain C image loading library by [nothings](http://nothings.org).
+- `stb` Public domain C image loading library by [nothings](http://nothings.org){:target="blank"}.
 
 ## Assets
 
-- Character and animation from [mixamo](https://www.mixamo.com)
+- Character and animation from [mixamo](https://www.mixamo.com){:target="blank"}.
 
 ## Bibliography
-- [Background: Physics and Math of Shading by Naty Hoffmann](http://blog.selfshadow.com/publications/s2013-shading-course/hoffman/s2013_pbs_physics_math_notes.pdf)
-- [Real shading in Unreal Engine 4](http://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf)
-- [Unity User Manual](https://docs.unity3d.com/Manual/index.html)
-- [Learn OpenGL, extensive tutorial resource for learning Modern OpenGL](https://learnopengl.com)
+- [Background: Physics and Math of Shading by Naty Hoffmann](http://blog.selfshadow.com/publications/s2013-shading-course/hoffman/s2013_pbs_physics_math_notes.pdf){:target="blank"}.
+- [Real shading in Unreal Engine 4](http://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf){:target="blank"}.
+- [Unity User Manual](https://docs.unity3d.com/Manual/index.html){:target="blank"}.
+- [Learn OpenGL, extensive tutorial resource for learning Modern OpenGL](https://learnopengl.com){:target="blank"}.

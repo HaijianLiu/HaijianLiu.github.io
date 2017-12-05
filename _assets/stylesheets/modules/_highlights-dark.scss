@@ -18,12 +18,12 @@
 // Inline highlighting
 
 .highlighter-rouge {
-  padding: 2px 4px;
-  font-size: 14px;
-  color: $gray-lightest;
+  padding: 2px 8px;
+  font-size: 15px;
+  color: $white;
   background: darken($gray-darkest, 5);
   border: 1px solid $base-border-color;
-  border-radius: 1px;
+  border-radius: 4px;
 }
 
 // Responsive
