@@ -29,8 +29,9 @@ MacOS and Windows version have some different features:
 - `hard` very hard, but there always a simple way to clear.
 
 ## Download
-- MacOS. Recommended. Blue tooth controller supported. (OSX 10.12 or later)
-- Windows.
+
+- `OSX` [download](https://drive.google.com/file/d/1jl62Y4fG_GoKigkrgYL0_BoOQTFsst7Q/view?usp=sharing){:target="blank"} :sparkles:  (OSX 10.13 or later). Check source code [here](https://github.com/haijianliu/vania-opengl-cpp){:target="blank"}.
+- `Win` [download](https://drive.google.com/file/d/1VW0WIWiZeIKFCj_9DUfNVG17S8xXHbXK/view?usp=sharing){:target="blank"}.
 
 {% include image.html path="2017-9-26-last-planet/last_planet@2x.png" path-detail="2017-9-26-last-planet/last_planet_full@2x.png" alt="last planet" %}
 

@@ -5,9 +5,11 @@ description: "A dungeon tease and rendering show case."
 tags: [opengl, cpp, mac]
 ---
 
-I have been working on a personal rendering engine these days. Although there are lots needed to deal with and it is really just a beginning, finally here comes the first tease!:tada:
+I have been working on a personal rendering engine these days. Although there are lots needed to deal with and it is really just a beginning, finally here comes the first tease! :tada:
 
-{% include image.html path="2017-11-26-dungeon-demo/dungeon_screen@2x.png" path-detail="2017-11-26-dungeon-demo/dungeon_screen_full@2x.png" alt="dungeon tease" %}
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://www.youtube.com/embed/Hp1O_UeuIm8?loop=1&playlist=Hp1O_UeuIm8&modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen></iframe>
+</div>
 
 ## Features
 
@@ -27,15 +29,12 @@ Features currently supported:
 - `import blender file` blender is an awesome software. All the stages were edited in blender.
 
 And some new features are one the way, such like `baked shadow and lighting` `LUT filter` `bloom and blur`.
-Here follows a short video:
-
-<div class="embed-responsive embed-responsive-16by9">
-<iframe src="https://www.youtube.com/embed/Hp1O_UeuIm8?loop=1&playlist=Hp1O_UeuIm8&modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen></iframe>
-</div>
 
 ## Download
 - Source code available on GitHub (without assets).
 - Download this demo here. (Password required && OSX 10.12 or later && PS4 controller).
+
+{% include image.html path="2017-11-26-dungeon-demo/dungeon_screen@2x.png" path-detail="2017-11-26-dungeon-demo/dungeon_screen_full@2x.png" alt="dungeon tease" %}
 
 ## Frameworks
 
