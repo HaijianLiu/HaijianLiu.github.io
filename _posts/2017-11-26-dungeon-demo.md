@@ -32,7 +32,7 @@ And some new features are one the way, such like `baked shadow and lighting` `LU
 
 ## Download
 - Source code available on [GitHub](https://github.com/haijianliu/dungeon-tease){:target="blank"} (without assets).
-- Download this demo [here](https://drive.google.com/file/d/1HrMnhh378XZT79TxvPO3ihQHLHixFhi3/view?usp=sharing){:target="blank"}. (required: OSX 10.13 or later, PS4 controller).
+- Download this demo [here](https://drive.google.com/file/d/17Sq53Csd2zwRZgxIhaAhuwFjntR9B1d9/view?usp=sharing){:target="blank"}. (required: OSX 10.13 or later, PS4 controller).
 
 {% include image.html path="2017-11-26-dungeon-demo/dungeon_screen@2x.png" path-detail="2017-11-26-dungeon-demo/dungeon_screen_full@2x.png" alt="dungeon tease" %}
 
