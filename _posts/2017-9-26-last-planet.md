@@ -30,8 +30,8 @@ MacOS and Windows version have some different features:
 
 ## Download
 
-- `OSX` [download](https://drive.google.com/file/d/1jl62Y4fG_GoKigkrgYL0_BoOQTFsst7Q/view?usp=sharing){:target="blank"} :sparkles:  (OSX 10.13 or later). Check source code [here](https://github.com/haijianliu/vania-opengl-cpp){:target="blank"}.
-- `Win` [download](https://drive.google.com/file/d/1VW0WIWiZeIKFCj_9DUfNVG17S8xXHbXK/view?usp=sharing){:target="blank"}.
+- `OSX` [download](https://drive.google.com/file/d/1BoMI938O3L1ZRnvUED7IXxvYIc6osHxn/view?usp=sharing){:target="blank"} :sparkles:  (OSX 10.13 or later). Check source code [here](https://github.com/haijianliu/vania-opengl-cpp){:target="blank"}.
+- `Win` [download](https://drive.google.com/file/d/1quQ_V_do9t3M2WUbaYGuB0SdyehrlhnP/view?usp=sharing){:target="blank"}.
 
 {% include image.html path="2017-9-26-last-planet/last_planet@2x.png" path-detail="2017-9-26-last-planet/last_planet_full@2x.png" alt="last planet" %}
 
