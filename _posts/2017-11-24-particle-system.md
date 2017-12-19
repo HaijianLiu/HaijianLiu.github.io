@@ -25,7 +25,7 @@ So there will be a totally 94 particles for each fire effect.
 
 ## Component
 
-Like all the other game engines, the whole particle system is simply combined with two parts: Emiter and Particle.
+Like all the other game engines, the whole particle system is simply combined with two parts: Emitter and Particle.
 
 #### Emitter
 
