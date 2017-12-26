@@ -1,4 +1,0 @@
----
-slug: directx
-name: DirectX
----
