@@ -158,7 +158,6 @@ Here I used some lookup tables from Unreal Engine to apply color transforms in a
 <p>Apply the lookup table after the final combination of all the other passes. Since the output value of ‘combine pass’ is followed by an tone mapping processing, none of the RGB values will reach 1.0. And it is better to use some precomputed numbers. (etc. 0.03125 is 1/32)</p>
 
 <figure class="highlight"><pre><code class="language-glsl" data-lang="glsl"><span class="k">out</span> <span class="kt">vec4</span> <span class="n">lutPass</span><span class="p">;</span>
-
 <span class="k">in</span> <span class="kt">vec2</span> <span class="n">uv</span><span class="p">;</span>
 
 <span class="k">uniform</span> <span class="kt">sampler2D</span> <span class="n">combinePass</span><span class="p">;</span>

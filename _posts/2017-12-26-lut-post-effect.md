@@ -31,7 +31,6 @@ Apply the lookup table after the final combination of all the other passes. Sinc
 
 {% highlight glsl %}
 out vec4 lutPass;
-
 in vec2 uv;
 
 uniform sampler2D combinePass;
